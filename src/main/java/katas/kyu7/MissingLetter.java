@@ -1,4 +1,4 @@
-package katas;
+package katas.kyu7;
 
 /**
  * 6 kyu
@@ -17,8 +17,8 @@ package katas;
  * <p>
  * (Use the English alphabet with 26 letters!)
  */
-public class MissingLetter {
-    public static char findMissingLetter(char[] array) {
+class MissingLetter {
+    static char findMissingLetter(char[] array) {
         for (int i = 1; i < array.length; i++) {
             if ((int) array[i] != (int) array[i - 1] + 1)
                 return (char) ((int) array[i - 1] + 1);

@@ -1,4 +1,4 @@
-package katas;
+package katas.kyu7;
 
 /**
  * 6 kyu

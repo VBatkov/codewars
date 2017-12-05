@@ -1,4 +1,4 @@
-package katas;
+package katas.kyu7;
 
 /**
  * 7 kyu
@@ -16,8 +16,8 @@ package katas;
  * findNextSquare(625) --> returns 676
  * findNextSquare(114) --> returns -1 since 114 is not a perfect
  */
-public class NextPerfectSquare {
-    public static long findNextSquare(long sq) {
+class NextPerfectSquare {
+    static long findNextSquare(long sq) {
         double d = Math.sqrt(sq);
         long r = -1;
         if (d - (long) d <= 0.000001f) r = (long) Math.pow((long) d + 1, 2);

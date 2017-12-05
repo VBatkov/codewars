@@ -1,4 +1,4 @@
-package katas;
+package katas.kyu7;
 
 /**
  * 6 kyu
@@ -14,7 +14,7 @@ package katas;
  * persistence(999) == 4 // because 9*9*9 = 729, 7*2*9 = 126, 1*2*6 = 12, and finally 1*2 = 2
  * persistence(4) == 0 // because 4 is already a one-digit number
  */
-public class PersistentBugger {
+class PersistentBugger {
     private static int t(String n, int level) {
         Long z = 1L;
         for (char c : n.toCharArray())
@@ -25,7 +25,7 @@ public class PersistentBugger {
             return level + 1;
     }
 
-    public static int persistence(long n) {
+    static int persistence(long n) {
         if (String.valueOf(n).length() == 1) return 0;
         return t(String.valueOf(n), 0);
     }

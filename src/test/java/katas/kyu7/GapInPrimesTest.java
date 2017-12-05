@@ -1,7 +1,6 @@
-package katas;
+package katas.kyu7;
 
 import org.junit.Test;
-import sun.reflect.annotation.ExceptionProxy;
 
 import java.util.Arrays;
 

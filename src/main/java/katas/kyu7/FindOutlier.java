@@ -1,4 +1,4 @@
-package katas;
+package katas.kyu7;
 
 /**
  * 6 kyu
@@ -17,7 +17,7 @@ package katas;
  * [160, 3, 1719, 19, 11, 13, -21]
  * Should return: 160 (the only even number)
  */
-public class FindOutlier {
+class FindOutlier {
     static int find(int[] integers) {
         int firstOddPos = -1;
         int firstEvenPos = -1;

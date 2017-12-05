@@ -1,4 +1,4 @@
-package katas;
+package katas.kyu7;
 
 /**
  * 6 kyu
@@ -20,8 +20,8 @@ package katas;
  * <p>
  * Note: n, p will always be given as strictly positive integers.
  */
-public class DigPow {
-    public static long digPow(int n, int p) {
+class DigPow {
+    static long digPow(int n, int p) {
         int pi = p;
         long sum = 0;
         for (char z : Integer.toString(n).toCharArray()) {

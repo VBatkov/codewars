@@ -1,4 +1,4 @@
-package katas;
+package katas.kyu7;
 
 /**
  * 7 kyu
@@ -23,8 +23,8 @@ package katas;
  * #Output
  * The middle character(s) of the word represented as a string.
  */
-public class GetMiddleCharacter {
-    public static String getMiddle(String word) {
+class GetMiddleCharacter {
+    static String getMiddle(String word) {
         int n = word.length() / 2;
         StringBuilder sb = new StringBuilder(word);
         return sb.substring(word.length() % 2 == 0 ? n - 1 : n, n + 1);
